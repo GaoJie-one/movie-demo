@@ -1,0 +1,150 @@
+.detail-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+
+    h1 {
+        font-weight: 800;
+        color: #1976d2;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        text-align: center;
+        background: linear-gradient(90deg, #3a8bfd 0%, #00ffe9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-shadow: 0 4px 24px rgba(58, 139, 253, 0.12);
+    }
+
+    h2 {
+        font-weight: 600;
+        color: #fff;
+        padding: 8px 24px;
+        margin: 18px auto 16px auto;
+        background: linear-gradient(90deg, #00ffe9 0%, #3a8bfd 100%);
+        border-radius: 30px;
+        box-shadow: 0 4px 16px rgba(58, 139, 253, 0.15);
+        letter-spacing: 2px;
+        text-align: center;
+        width: fit-content;
+        border: none;
+    }
+
+    .introduction {
+        display: flex;
+        gap: 32px;
+        background: linear-gradient(90deg, #e3f2fd 0%, #f8ffff 100%);
+        border-radius: 24px;
+        box-shadow: 0 4px 24px rgba(58, 139, 253, 0.10);
+        padding: 32px 24px;
+        align-items: flex-start;
+        margin-bottom: 32px;
+
+        img {
+            width: 320px;
+            max-width: 40vw;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(58, 139, 253, 0.12);
+            object-fit: cover;
+            background: #fff;
+        }
+
+        .info {
+            flex: 1;
+            padding-left: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+
+            h3 {
+                font-size: 1.1rem;
+                color: #555;
+                margin-bottom: 16px;
+            }
+
+
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 16px;
+
+                li {
+                    border: 1px solid #3a8bfd;
+                    padding: 5px 14px;
+                    background-color: rgba(58, 139, 253, 0.08);
+                    border-radius: 8px;
+                    color: #1976d2;
+                    font-size: 0.95rem;
+                    font-weight: 500;
+                }
+            }
+
+            p {
+                text-indent: 2em;
+                padding: 10px 0;
+                color: #333;
+                line-height: 1.8;
+                font-size: 1rem;
+                background: rgba(255, 255, 255, 0.6);
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 18px;
+            }
+
+            .info {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .production-companies {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        padding: 20px 0;
+
+        li {
+            background: linear-gradient(120deg, #e0f7fa 0%, #e3f2fd 100%);
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(58, 139, 253, 0.12);
+            padding: 18px 12px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #00ffe9;
+
+            &:hover {
+                transform: translateY(-6px) scale(1.03);
+                box-shadow: 0 8px 24px rgba(58, 139, 253, 0.18);
+                border-color: #3a8bfd;
+            }
+
+            img {
+                height: 48px;
+                margin-bottom: 10px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(58, 139, 253, 0.08);
+            }
+
+            h4 {
+                margin: 10px 0 0 0;
+                font-size: 1.1rem;
+                color: #1976d2;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
